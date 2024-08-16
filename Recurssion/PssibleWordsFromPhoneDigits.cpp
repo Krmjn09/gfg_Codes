@@ -50,7 +50,7 @@ int main() {
 	    
 	   cin >> N; //input size of array
 	   
-	   int a[N]; //declare the array
+	vector<int> a(N); //declare the vector
 	   
 	   for(int i =0;i<N;i++){
 	       cin >> a[i]; //input the elements of array that are keys to be pressed
@@ -58,7 +58,7 @@ int main() {
 	   
 	   Solution obj;
 	   
-	  vector <string> res = obj.possibleWords(a,N);
+	vector <string> res = obj.possibleWords(&a[0], N);
 	  for (string i : res) cout << i << " ";
 	   cout << endl;
 	}
