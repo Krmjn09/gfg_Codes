@@ -1,7 +1,10 @@
+//{ Driver Code Starts
+//Initial template for C++
+
 #include <iostream>
 #include <vector>
+#include <algorithm>
 using namespace std;
-
 
 
 // } Driver Code Ends
@@ -11,26 +14,23 @@ class Solution{
 public:
     //Function to find the days of buying and selling stock for max profit.
     vector<vector<int> > stockBuySell(vector<int> A, int n){
-        // code here
         vector<vector<int>> temp(n);
-        int i = 0;
-        int j = 0;
-        while (i < n - 1)
+        int i =0,j=0,k=0;
+        while(j < n - 1) 
         {
-            // Find Local Minima
-            while ((i < n - 1) && (A[i + 1] <= A[i]))
-                i++;
-            // If we reached the end, break
-            // as no further solution possible
-            if (i == n - 1)
-                break;
-            temp[j].push_back(i++);
-            // Find Local Maxima
-            while ((i < n) && (A[i] >= A[i - 1]))
-                i++;
-            temp[j].push_back(i - 1);
-            j++;
+            if(A[j+1]>A[j])
+            {
+                j++;
+            }
+            else{
+                 if (i != j) {
+            temp.push_back({i, j});
         }
+                j++;
+                i=j;
+            }
+        }
+        return temp;
     }
 };
 
