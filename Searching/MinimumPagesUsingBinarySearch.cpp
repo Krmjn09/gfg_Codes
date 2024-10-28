@@ -3,24 +3,6 @@
 using namespace std;
     int isFeasible(int arr[],int n, int k, int ans)
     {
-        // while(k<=n)
-        // {
-        //     int sum =0;
-        //     for(int i = 0;i<n;i++)
-        //     {
-        //         sum = sum+arr[i];
-        //         if(sum>ans)
-        //         {
-        //             sum = arr[i];
-        //             k++;
-        //         }
-        //         if(sum>ans)
-        //         {
-        //             return false;
-
-        //     }
-        // }
-        // return true;
         int students = 1;
         int sum = 0;
         for(int i = 0;i<n;i++)
@@ -38,6 +20,8 @@ using namespace std;
         }
         return true;
     }
+
+    
 int minimumPages(int arr[],int n , int k)
 {
     int sum = 0;
