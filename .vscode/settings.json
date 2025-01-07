@@ -5,6 +5,8 @@
     "vector": "cpp",
     "iostream": "cpp",
     "initializer_list": "cpp",
-    "xutility": "cpp"
+    "xutility": "cpp",
+    "xhash": "cpp",
+    "unordered_set": "cpp"
   }
 }
