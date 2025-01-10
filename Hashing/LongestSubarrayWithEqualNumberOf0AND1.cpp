@@ -40,3 +40,4 @@ int main()
     cout<<LongestSubarrayWithEqualNumberOf0AND1(arr,n);
     return 0;
 }
+// number of lookups is twice the size of the hash table

@@ -34,8 +34,8 @@ int CommonSpanWithSameSum(int arr1[], int arr2[], int n)
 }
 int main()
 {
-    int arr1[] = {0,1,0,0,0,0};
-    int arr2[] = {1,0,1,0,0,1};
+    int arr1[] = {1,1,1,1,1,1};
+    int arr2[] = {0,0,0,0,0,0};
     int n = sizeof(arr1)/sizeof(arr1[0]);
     cout<<CommonSpanWithSameSum(arr1,arr2,n);
     return 0;
