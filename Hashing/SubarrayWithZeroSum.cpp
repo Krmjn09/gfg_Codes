@@ -29,7 +29,7 @@ bool SubarraywithZeroSum(int arr[], int n )
 }
 int main()
 {
-    int arr[] = {10,10,10};
+    int arr[] = {0,10,10};
     int n = sizeof(arr) / sizeof(arr[0]);
     cout << SubarraywithZeroSum(arr,n);
     return 0;
