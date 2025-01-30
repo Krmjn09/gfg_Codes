@@ -9,6 +9,7 @@
     "xhash": "cpp",
     "unordered_set": "cpp",
     "xlocinfo": "cpp",
-    "unordered_map": "cpp"
+    "unordered_map": "cpp",
+    "xlocale": "cpp"
   }
 }
